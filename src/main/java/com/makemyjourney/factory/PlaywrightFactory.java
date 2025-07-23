@@ -30,7 +30,7 @@ public class PlaywrightFactory {
                 browserType = playwright.chromium();
                 break;
         }
-        browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(200));
+        browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true).setSlowMo(200));
         context = browser.newContext(); // Fresh browser incognito
         page = context.newPage(); // opening fresh page to open any URL
     }
