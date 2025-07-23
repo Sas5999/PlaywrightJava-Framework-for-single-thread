@@ -42,8 +42,8 @@ public class LoginTests extends BaseTest {
         Allure.step("Test valid creds");
         loginPage.login("standard_user","secret_sauce");
         Assert.assertEquals(page.url(),"https://www.saucedemo.com/inventory.html");
-        page.screenshot(new Page.ScreenshotOptions()
-                .setPath(Paths.get("/Users/pdgt/IdeaProjects/PlaywrightJavaTempFramework/Screenshots/Homespage.png"))
-                .setFullPage(true));
+//        page.screenshot(new Page.ScreenshotOptions()
+//                .setPath(Paths.get("Screenshots/Homespage.png"))
+//                .setFullPage(true));
     }
 }
